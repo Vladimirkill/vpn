@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Env files
+.env
+.env.*
+
+# Virtual env
+venv/
+.venv/
+
+# System
+.DS_Store
+Thumbs.db
+
+# VSCode, PyCharm
+.vscode/
+.idea/
+
+# Compiled files
+*.so
+*.egg
+*.egg-info/
+
+# Xray/VPN-specific
+xray/final_config.json
+xray/base_config.json
+xray/clients/*.json
+xray/reality.json
+
+# Backups
+backups/
+*.bak
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.pub
+ssh_*
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/
