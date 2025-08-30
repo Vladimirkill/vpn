@@ -1,0 +1,28 @@
+ nano /etc/systemd/system/xray.service
+ 
+ sudo nano /etc/systemd/system/vpn_bot.service
+
+# Прочитать новый юнит
+sudo systemctl daemon-reload
+
+# Включить автозапуск при перезагрузке
+sudo systemctl enable vpn_bot
+
+# Запустить вручную
+sudo systemctl start vpn_bot
+
+sudo systemctl restart vpn_bot
+
+# Проверить статус
+sudo systemctl status vpn_bot
+
+journalctl -u vpn_bot -n 50 -f
+
+journalctl -u xray.service -n 50 -f
+
+sudo systemctl restart xray
+
+# Проверить статус
+sudo systemctl status xray
+
+tail -n 50 /var/www/project987/vpn/vpn_bot/vpn_generator.log

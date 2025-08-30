@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+env/
+
+# Secrets / конфиги
+*.json
+!README.md
+
+# System files
+.DS_Store
+*.log
+
+# Бэкапы
+backups/
+*.bak
+
+# Prod/Dev артефакты
+*.sqlite3
+*.db

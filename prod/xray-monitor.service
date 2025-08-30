@@ -1,0 +1,17 @@
+[Unit]
+Description=Xray Configuration Monitor
+After=network.target xray.service
+Wants=xray.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/project987/vpn/xray
+ExecStart=/usr/bin/python3 /var/www/project987/vpn/xray/monitor_clients.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target 
